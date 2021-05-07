@@ -1,0 +1,19 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/profile/{userId}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "5003"
+                }
+            ],
+            "UpstreamPathTemplate": "/api/profile/{userId}",
+            "UpstreamHttpMethod": ["Get"]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5001"
+    }
+}
